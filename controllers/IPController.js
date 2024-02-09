@@ -10,7 +10,6 @@ exports.getIPDetails = async (req, res) => {
     const ip = req.params.ip;
     const format = req.params.format || 'json';
     const url = `https://ipapi.co/${ip}/${format}`;
-    console.log(url);
 
     try {
         const response = await fetch(url);

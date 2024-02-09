@@ -33,6 +33,5 @@ exports.get = (req, res) => {
         cookies: req.cookies
     };
 
-    console.log(data);
     res.json(data);
 }
